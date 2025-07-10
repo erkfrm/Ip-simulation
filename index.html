@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erreur 404</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .ip {
+      color: #00ffcc;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    .alert {
+      color: red;
+      font-weight: bold;
+      margin-top: 50px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Erreur 404 - Page introuvable</h1>
+    <p>Chargement...</p>
+
+    <div class="ip" id="ip">Récupération de l'adresse IP...</div>
+    <div class="alert" id="alert">
+      🎯 Ton IP a été capturée !<br>
+      (Pas vraiment... c'était une simulation 👀)<br><br>
+      <em>Fais attention aux liens que tu cliques !</em>
+    </div>
+  </div>
+
+  <script>
+    fetch("https://
+
+Parfait 👍 Tu veux que je t’aide à créer **le dépôt GitHub prêt à héberger** cette simulation de faux IP grabber ?
+
+---
+
+## 🧩 Voici exactement ce que je vais faire pour toi :
+- ✅ Te donner le **fichier complet `index.html`**
+- ✅ T’expliquer **comment l’ajouter à GitHub**
+- ✅ T’aider à l’héberger sur **GitHub Pages** (comme un vrai faux site piégé)
+
+---
+
+### 💻 1. Code complet `index.html` pour ton dépôt
+
+Copie-colle ce code **exactement** dans un fichier nommé `index.html` :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erreur 404</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .ip {
+      color: #00ffcc;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    .alert {
+      color: red;
+      font-weight: bold;
+      margin-top: 50px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Erreur 404 - Page introuvable</h1>
+    <p>Chargement...</p>
+
+    <div class="ip" id="ip">Récupération de l'adresse IP...</div>
+    <div class="alert" id="alert">
+      🎯 Ton IP a été capturée !<br>
+      (Pas vraiment... c'était une simulation 👀)<br><br>
+      <em>Fais attention aux liens que tu cliques !</em>
+    </div>
+  </div>
+
+  <script>
+    fetch("https://api.ipify.org?format=json")
+      .then(response => response.json())
+      .then(data => {
+        const ipDiv = document.getElementById("ip");
+        const alertDiv = document.getElementById("alert");
+
+        ipDiv.textContent = "Adresse IP détectée : " + data.ip;
+        setTimeout(() => {
+          alertDiv.style.display = "block";
+        }, 2000);
+      })
+      .catch(error => {
+        document.getElementById("ip").textContent = "Erreur lors de la récupération de l'IP.";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
